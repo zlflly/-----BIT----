@@ -1,0 +1,54 @@
+.menuButtons{
+  width: 500px;
+  height: 350px;
+  border-top: 1px solid rgba(255,255,255,0.5);
+  border-left: 1px solid rgba(255,255,255,0.5);
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+  border-right: 1px solid rgba(255,255,255,0.3); 
+  backdrop-filter: blur(10px);
+  background: rgba(229, 7, 7, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  position: absolute;
+  margin: auto;
+  inset: 0;
+  z-index: 2;
+  transition: .3s linear;
+}
+.space{
+  height: 9px;
+  width: 700px;
+}
+.buttonBox{
+  position: relative;
+  text-align: center;
+  width: 400px;
+  height: 75px;
+  cursor: pointer;
+}
+.buttonBox:hover{
+  transform: rotateX(15deg);
+}
+.button-buttonimgs{
+  width: 100%;
+  height:100%;
+}
+.content{
+  position: absolute;
+  color: black;
+   /* top: 0;  
+    left: 0;*/
+  font-family :楷体,sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  margin: 0;
+  padding: 0;
+}

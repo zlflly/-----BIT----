@@ -1,0 +1,118 @@
+body{
+    height: 100vh;
+    background-image: url(../login/loginbgr.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-attachment: fixed;
+}
+
+h1{
+    font-family: 华文行楷;
+    font-size: 150px;
+    font-weight: 300;
+    color: rgb(211, 213, 211);
+    text-align: center;
+}
+
+#x{
+    display: flex;
+}
+
+#y{
+    position: absolute;
+    left: 18%;
+    top: 13%;
+}
+
+#x > li{
+    margin-right: 50px;
+}
+
+#y > ul{
+    margin-top: 50px;
+    margin-bottom: 50px;
+	list-style-type: none; 
+}
+
+.box {
+    width: 210px;
+    height: 130px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+    background-color: rgb(58, 58, 58);
+}
+
+.gray {
+    filter: grayscale(1);
+}
+
+.shang{
+    width: 210px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tubiao{
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timu{
+    width: 146px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shuoming{
+    width: 210px;
+    height: 66px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.t{
+    color: aliceblue;
+}
+
+.s{
+    color: rgb(146, 157, 49);
+}
+
+.btn button{
+    width: 150px;
+    height: 70px;
+    color: rgba(255,255,255,0.9);
+    border: 1px solid rgba(192, 119, 91, 0.7);
+    background: rgba(192, 119, 91, 0.5);
+    border-radius: 15px;
+    margin-top: 30px;
+    margin-left: 70px;
+    font-family: 华文琥珀;
+    font-size: 40px;
+    position: absolute;
+    left: 5%;
+    top: 80%;
+}
+
+.btn button:hover {
+    border: 1px solid rgba(251, 128, 71, 0.7);
+    background: rgba(251, 128, 71, 0.5);
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Brilliant In Teli</title>
+<!--“Good artists copy;Great artist steal ——毕加索“
+老师强调项目开发需要巧妙地抄已有代码，我也觉得如果我们的代码能给人已参考，我是十分高兴的。
+但小心，我们的代码含有”缺乏注释、代码过耦合、大量异步函数、类功能冗杂、逆天的面向过程“等多种要素，而且对于一些通用的部分，例如存档、对话等部分其实没有专注于做同班其他组做别的类型游戏的功能完善、专业。
+因此我个人不建议完全使用我们的代码，而且横卷轴2D的制作也是一等一的麻烦，最后导致我们在剧情表现上欠佳(sad)
+不过我们两个小游戏的代码相对独立于游戏本体，因此代码可读性更好一点，而且我自认为我们组的小游戏做的也足够精细-->
+  </head>
+  <link rel="stylesheet" href="css/index.css" type="text/css"/>
+  <body>
+    <div id="index">
+		<img class="index-bgr" src="img/index.jpg" />
+
+		<div class="index-button-group">
+			<div class="index-buttonbox" onclick="newGame()">
+				<img class="button-buttonimg" src="img/button.png">
+				<toBeTranslated class="button-buttontext">
+					新游戏
+				</toBeTranslated>
+			</div>
+			<div class="index-buttonbox" id="continue" onclick="continueGame()" style="display:none;">
+				<img class="button-buttonimg" src="img/button.png">
+				<toBeTranslated class="button-buttontext">
+					继续游戏
+				</toBeTranslated>
+			</div>
+			<div class="index-buttonbox" onclick="window.location.href='achieve.html'">
+				<img class="button-buttonimg" src="img/button.png">
+				<toBeTranslated class="button-buttontext">
+					成就
+				</toBeTranslated>
+			</div>
+			<div class="index-buttonbox" onclick="window.location.href='settings/settings.html'">
+				<img class="button-buttonimg" src="img/button.png">
+				<toBeTranslated class="button-buttontext">
+					设置
+				</toBeTranslated>
+			</div>
+			<div class="index-buttonbox" onclick="window.location.href='about/about.html'">
+				<img class="button-buttonimg" src="img/button.png">
+				<toBeTranslated class="button-buttontext">
+					关于
+				</toBeTranslated>
+			</div>
+			<div class="index-buttonbox" onclick="logout()">
+				<img class="button-buttonimg" src="img/button.png">
+				<toBeTranslated class="button-buttontext">
+					退出登录
+				</toBeTranslated>
+			</div>
+		</div>
+	</div>
+	<script>
+			window.onload=function(){
+				if(!localStorage.getItem('BITeli-username')){
+					window.location.href="login/login.html";
+					return;
+				}
+				if(!localStorage.getItem('BITeli-config')){
+					let config={
+						"Up":"W",
+						"Left":"A",
+						"Down":"S",
+						"Right":"D",
+						"Jump":"Space",
+						"Dash":"Shift",
+						"Enter":"Enter",
+						"Interact":"E",
+						"RotateL":"W",
+						"RotateR":"X",
+						"HardDrop":"Space"
+					}
+					localStorage.setItem('BITeli-config',JSON.stringify(config));
+				}
+				let user=localStorage.getItem('BITeli-username')||'default';
+				if(localStorage.getItem('BITeli-save-'+user)){
+					document.getElementById('continue').style.display='block';
+				}
+			}
+			function newGame(){
+				let user=localStorage.getItem('BITeli-username')||'default';
+				localStorage.removeItem('BITeli-save-'+user);
+				window.location.href='game.html'
+			}
+			function continueGame(){
+				window.location.href='game.html';
+			}
+			function logout(){
+				localStorage.removeItem('BITeli-username');
+				window.location.href="login/login.html";
+			}
+	</script>
+  </body>
+</html>

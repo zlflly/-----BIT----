@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #fff ;
+    min-width: 1200px;
+}
+
+
+.header {
+    height: 80px;
+    width: 100%;
+    font-style: oblique;
+    background: #efe3e3;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav-box {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    height: 40px;
+    padding-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 30px;
+    color: #333;
+}
+
+.banner {
+    width: 100%;
+    margin: 0 auto;
+    background: #dacdab ;
+    background-size: 100%;
+    height: 312px;
+    text-align: center;
+    line-height: 312px;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.introduce {
+    width: 900px;
+    margin: 0 auto;
+    padding: 40px 0;
+
+}
+
+.introduce-tit {
+    line-height: 50px;
+    font-size: 28px;
+    font-weight: 600;
+    padding-bottom: 30px;
+    padding-top: 40px;
+    color: #555;
+}
+
+.introduce-main {
+    display: flex;
+}
+
+.introduce-main .l {
+    margin-right: 60px;
+}
+
+.introduce .l img {
+    border-radius: 50%;
+}
+
+.introduce-main .r {
+    line-height: 50px;
+    font-size: 18px;
+    color: #555;
+}
+
+.mbti-box{
+    display: flex;
+    width: 100%;
+}
+.work {
+    display: flex;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.r-box {
+    margin-left: 40px;
+    line-height: 26px;
+
+}
+
+.r-box .tit {
+    font-size: 18px;
+    color: #333;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.r-box .small {
+    font-size: 16px;
+    color: #666;
+}
+
+.r-box .time {
+    height: 40px;
+    width: 170px;
+    line-height: 40px;
+    background: #333;
+    color: #fff;
+    font-size: 14px;
+    margin-top: 20px;
+    display: flex;
+}
+
+.skill {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.skill .tit {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+}
+
+.progress {
+    width: 100%;
+    height: 7px;
+    border-radius: 7px;
+    background: #ddd;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress-in {
+    position: absolute;
+    height: 7px;
+    left: 0;
+    top: 0;
+    background: lightblue;
+}
+
+.foot-box {
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 13px;
+    background: #000;
+    color: #fff;
+}
+
+.main-box {
+    width: 1000px;
+    margin: 20px auto;
+}

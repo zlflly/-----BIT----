@@ -1,0 +1,35 @@
+@font-face {
+    font-family: Minecraft;
+    src: url("../font/Minecraft\ AE.ttf");
+}
+
+.mini-achi {
+    width: 300px;
+    height: 90px;
+    display: block;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+    background-color: rgb(58, 58, 58);
+}
+
+.mini-achi-img {
+    width: 64px;
+	float: left;
+	margin-top: 8px;
+	margin-left: 8px;
+}
+
+.mini-achi-title {
+	float: left;
+	margin-left: 15px;
+}
+
+.mini-achi-title p {
+	color: white;
+	font-size: 4vh;
+	font-family: Minecraft;
+	margin-top: 15px;
+	margin-bottom: 0;
+}

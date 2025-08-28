@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>个人主页</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    .shell{
+        height: 100vh;
+        overflow-x: hidden;
+        perspective: 3px;
+    }
+    .shell div{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-style: 30px;
+        letter-spacing: 2px;
+    }
+    .image{
+        transform: translateZ(-1px) scale(1.6);
+        background-size: cover;
+        height: 100vh;
+        z-index: -1;
+    }
+    .text{
+        height: 50vh;
+        background-color: #fff;
+    }
+    .text h1{
+        color: #000;
+        margin-right: 20%;
+        margin-left: 20%;
+    }
+    .heading{
+        z-index: -1;
+        transform: translateY(-30vh) translateZ(1px);
+        color: #d4fc77;
+        font-size: 30px;
+    }
+</style>
+
+<body>
+    <div class="shell">
+        <div class="image" style="background-image: url('./image/self.png');"></div>
+        <div class="heading">
+            <h1>王子腾的个人主页</h1>
+        </div>
+        <div class="text">
+            <h1>一名热爱游戏的大学生</h1>
+        </div>
+
+        <div class="image" style="background-image:url('./image/2.jpg');"></div>
+        <div class="heading">
+            <h1>小组职责</h1>
+        </div>
+        <div class="text">
+            <h1>剧本设计(文笔不好还爱玩梗的作者)<br>初级程序员(其实是打杂的初学者)</h1>
+        </div>
+
+        <div class="image" style="background-image:url('./image/3.jpg');"></div>
+        <div class="heading">
+            <h1>个人简介</h1>
+        </div>
+        <div class="text">
+            <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;一位热爱游戏的河北石家庄人，就读于北京理工大学2022级徐特立英才班-计算机科学2201班。<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;从小学开始对计算机与游戏产生兴趣，但是受限于河北初高中“非学习不可”的氛围，从未被允许花心思投入其中。我曾在初一、初二尝试学习过C语言，但并未得到父母支持，随着课业逐渐繁重，我的不得已放弃了自学编程。。<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我进入大学后，环境自由许多，开始尝试研究编程，学会了C语言，并选择了计算机科学专业。我很认同赵丰年老师说的“如果你喜欢玩游戏，那你就离编程不远了”，我个人本身对编程以及游戏的热爱可以充分的释放在游戏的开发中，于是在小学期我开始自学HTML、CSS、JS技术，以期同其他“提瓦特万”小组成员进行了场景开发。<br>
+
+            </h1>
+        </div>
+        <div class="image" style="background-color: white;"></div>
+        <div class="text">
+            <h1>终</h1>
+        </div> 
+
+    </div>
+</body>
+
+</html> 

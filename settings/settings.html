@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title>Brilliant In Teli</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<script src="settings.js"></script>
+	<script src="../js/Util.js"></script>
+</head>
+<body>
+    <div class="box">
+        <h2>设置</h2>
+        <div class="anjian">
+            <h3>按键设置:</h3>
+            <div class="zhiling" id="Left">
+                <h4>向左移动</h4>
+                <button onclick="rebind('Left')"></button>
+                <button onclick="reset('Left')">重置</button>
+            </div>
+            <div class="zhiling" id="Right">
+                <h4>向右移动</h4>
+                <button onclick="rebind('Right')"></button>
+                <button onclick="reset('Right')">重置</button>
+            </div>
+            <div class="zhiling" id="Up">
+                <h4>向上移动</h4>
+                <button onclick="rebind('Up')"></button>
+                <button onclick="reset('Up')">重置</button>
+            </div>
+            <div class="zhiling" id="Down">
+                <h4>向下移动</h4>
+                <button onclick="rebind('Down')"></button>
+                <button onclick="reset('Down')">重置</button>
+            </div>
+            <div class="zhiling" id="Jump">
+                <h4>跳跃</h4>
+                <button onclick="rebind('Jump')"></button>
+                <button onclick="reset('Jump')">重置</button>
+            </div>
+            <div class="zhiling" id="Enter">
+                <h4>下一条对话</h4>
+                <button onclick="rebind('Enter')"></button>
+                <button onclick="reset('Enter')">重置</button>
+            </div>
+            <div class="zhiling" id="Interact">
+                <h4>场景交互</h4>
+                <button onclick="rebind('Interact')"></button>
+                <button onclick="reset('Interact')">重置</button>
+            </div>
+            <div class="zhiling" id="Dash">
+                <h4>冲刺/暂存</h4>
+                <button onclick="rebind('Dash')"></button>
+                <button onclick="reset('Dash')">重置</button>
+            </div>
+            <div class="zhiling" id="RotateL">
+                <h4>逆时针旋转</h4>
+                <button onclick="rebind('RotateL')"></button>
+                <button onclick="reset('RotateL')">重置</button>
+            </div>
+            <div class="zhiling" id="RotateR">
+                <h4>顺时针旋转</h4>
+                <button onclick="rebind('RotateR')"></button>
+                <button onclick="reset('RotateR')">重置</button>
+            </div>
+            <div class="zhiling" id="HardDrop">
+                <h4>硬降</h4>
+                <button onclick="rebind('HardDrop')"></button>
+                <button onclick="reset('HardDrop')">重置</button>
+            </div>
+        </div>
+        <div class="btn">
+            <button onclick="window.location.href='../index.html'">返回</button>
+            <button onclick="saveConfig()">保存</button>
+        </div>
+    </div>
+	<script>
+		window.onload=function(){
+			init();
+			document.addEventListener('keydown',keydown);
+		}
+	</script>
+</body>
+</html>

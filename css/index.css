@@ -1,0 +1,57 @@
+body {
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+toBeTranslated {
+  white-space: nowrap;
+  cursor: default;
+}
+
+.index-bgr {
+  position: absolute;
+  left: 0;
+  top: -50px;
+  width: 100%;
+}
+.index-button-group {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  height: 60%;
+  transform: translateX(-50%);
+}
+
+.index-buttonbox {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 3% 0;
+  height: 16%;
+}
+
+.index-buttonbox:hover {
+  transform: translateX(-50%) scale(1.05);
+}
+
+.button-buttonimg {
+  height: 100%;
+}
+
+.button-buttontext {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 楷体;
+  font-size: 5.2vh;
+}
+
+.buttonbox:hover {
+  transform: scale(1.05);
+}

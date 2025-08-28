@@ -1,0 +1,128 @@
+<html>
+<head>
+    <title>成就页面</title>
+    <link rel="stylesheet" href="css/achieve.css">
+</head>
+<body>
+    <h1>成就</h1>
+    <ul id="y">
+        <ul id="x">
+            <li>
+                <div class="box gray" id="bad_end">
+                    <div class="shang">
+                        <div class="tubiao"><img src="img/achi/wither.png"></img></div>
+                        <div class="timu"><h class="t">下面是什么</h></div>
+                    </div>
+                    <div class="shuoming">
+                        <h class="s">掉落进虚空</h>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="box gray" id="crystal">
+                    <div class="shang">
+                        <div class="tubiao"><img src="img/achi/crystal.png"></img></div>
+                        <div class="timu"><h class="t">凌波微步</h></div>
+                    </div>
+                    <div class="shuoming">
+                        <h class="s">获得冲刺水晶</h>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="box gray" id="snake1">
+                    <div class="shang">
+                        <div class="tubiao"><img src="img/achi/bird.png"></img></div>
+                        <div class="timu"><h class="t">贪吃蛇？</h></div>
+                    </div>
+                    <div class="shuoming">
+                        <h class="s">Flappy Snake获得10分</h>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <ul id="x">
+            <li>
+                <div class="box gray" id="tetris1">
+                    <div class="shang">
+                        <div class="tubiao"><img src="img/achi/tetris.png"></img></div>
+                        <div class="timu"><h class="t">再接再厉</h></div>
+                    </div>
+                    <div class="shuoming">
+                        <h class="s">Tetris60秒内消除10行</h>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="box gray" id="normal_end">
+                    <div class="shang">
+                        <div class="tubiao"><img src="img/achi/heart.png"></img></div>
+                        <div class="timu"><h class="t">日常</h></div>
+                    </div>
+                    <div class="shuoming">
+                        <h class="s">通关普通结局</h>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="box gray" id="true_end">
+                    <div class="shang">
+                        <div class="tubiao"><img src="img/achi/eternal.png"></img></div>
+                        <div class="timu"><h class="t">真玩家</h></div>
+                    </div>
+                    <div class="shuoming">
+                        <h class="s">通关真结局</h>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <ul id="x">
+            <li>
+                <div class="box gray" id="strawberry">
+                    <div class="shang">
+                        <div class="tubiao"><img src="img/achi/strawberry.png"></img></div>
+                        <div class="timu"><h class="t">彩蛋</h></div>
+                    </div>
+                    <div class="shuoming">
+                        <h class="s">获得草莓</h>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="box gray" id="snake2">
+                    <div class="shang">
+                        <div class="tubiao"><img src="img/achi/python.png"></img></div>
+                        <div class="timu"><h class="t">尘世巨蟒</h></div>
+                    </div>
+                    <div class="shuoming">
+                        <h class="s">Flappy Snake获得20分</h>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="box gray" id="tetris2">
+                    <div class="shang">
+                        <div class="tubiao"><img src="img/achi/TETRIO.png"></img></div>
+                        <div class="timu"><h class="t">恭喜入门</h></div>
+                    </div>
+                    <div class="shuoming">
+                        <h class="s">Tetris60秒内消除30行</h>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </ul>
+    <div class="btn">
+        <button onclick="window.location.href='index.html'">返回</button>
+    </div>
+	<script>
+		window.onload=function(){
+			let user=localStorage.getItem('BITeli-username')||'default';
+			let achi=JSON.parse(localStorage.getItem('BITeli-achi-'+user));
+			for(let i of document.getElementsByClassName('box')){
+				if(achi[i.id])i.classList.remove('gray');
+			}
+		}
+	</script>
+</body>
+</html>

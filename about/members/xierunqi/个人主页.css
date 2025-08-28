@@ -1,0 +1,35 @@
+body {
+  background-image: url(images/bg1.jpg);
+  font-size: 20px;
+}
+h1 {
+  text-align: left;
+  font-size: 100px;
+  font-family: 华文行楷;
+  color: aqua;
+  text-align: center;
+}
+.div {
+  width: 100%;
+  height: 600px;
+  float: left;
+  margin: 0 auto;
+}
+.div .par {
+  float: left;
+  width: 50%;
+  height: 600px;
+}
+.div .pic {
+  float: right;
+  height: 600px;
+  width: 40%;
+}
+.div .pic .picture {
+  text-align: right;
+  width: 400px;
+  height: 400x;
+}
+.sbzs {
+  width: 60%;
+}
