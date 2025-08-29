@@ -7,6 +7,9 @@
 		<link rel="stylesheet" type="text/css" href="css/dialog.css">
 		<link rel="stylesheet" type="text/css" href="css/mini_achi.css">
     </head>
+
+
+	
     <body style="background-color:black;cursor:none;">
 		<div id="game">
 			<div class="menuButtons" style="opacity:0;display:none;">
@@ -38,7 +41,7 @@
 		<script src="js/InputManager.js"></script>
 		<script src="js/MapManager.js"></script>
 		<script src="js/EventManager.js"></script>
-		<script src="js/SaveManager.js"></script>
+		<script src="js/SaveManager.js"></script>		
 		<script src="js/Spritesheet.js"></script>
 		<script src="js/AnimationMachine.js"></script>
 		<script src="js/Entity.js"></script>
@@ -52,7 +55,7 @@
 		<script src="js/FlappySnake.js"></script>
 		<script src="js/Tetris.js"></script>
 		<script>
-			window.onload=function(){
+			window.onload=function(){ //创建游戏总管家
 				window.game=new Game();
 				function autoPlay(){
 					const music=["mp3/人魚の目覚め.mp3","mp3/雨のように.mp3","mp3/静かなる旅立ち.mp3"];

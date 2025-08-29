@@ -5,7 +5,7 @@ class SaveManager{
 	makeEmptyData(){
 		this.data={
 			"player":{
-				"room":"map/bedroom.json",
+				"room":"map/newmap.json",
 				"position":[320,320],
 				"facing":1,
 				"blockEvent":false
